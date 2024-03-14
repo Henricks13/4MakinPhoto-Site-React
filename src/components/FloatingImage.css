@@ -1,0 +1,17 @@
+/* components/FloatingImage.css */
+
+.floating-image-container {
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .floating-image {
+    width: 200px; /* Defina o tamanho da imagem conforme necessário */
+    height: 200px;
+    object-fit: cover;
+  }
+  

@@ -49,4 +49,37 @@
       width: 150px; /* Tamanho menor para dispositivos móveis */
     }
   }
+
+  /* src/components/Header.css */
+
+/* src/components/Header.css */
+
+.header-links {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header-links li {
+  display: inline-block;
+  margin-right: 10px; /* Reduzindo a margem entre os links */
+}
+
+.header-links li:last-child {
+  margin-right: 0;
+}
+
+.header-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold; /* Deixando o texto mais grosso */
+  padding: 5px 10px; /* Ajustando o padding dos links */
+  border-radius: 5px; /* Deixando os links mais quadrados */
+}
+
+.logo {
+  margin-right: auto; /* Move a logo para a esquerda o máximo possível */
+  margin-left: 10px; /* Adiciona um espaçamento à esquerda da logo */
+}
+
   

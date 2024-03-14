@@ -1,22 +1,31 @@
-// src/components/Header.js
-
 import React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Toolbar from '@mui/material/Toolbar';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 import './Header.css'; // Importar estilos CSS
 
 function Header() {
   return (
-    <AppBar position="static" style={{ backgroundColor: '#f5f5f5', color: '#333' }}>
-      <Toolbar>
-        {/* Use apenas a tag <img> para exibir a logo */}
-        <img
-          src="/logoSite.png"
-          alt="Logo do Site"
-          className="logo logo-mobile" // Aplicar classes CSS
-        />
-      </Toolbar>
-    </AppBar>
+    <Navbar expand="lg" className="bg-body-tertiary">
+      <Container>
+        <Navbar.Brand href="#home" className="fw-bold">
+          <img
+            src="/logoSite.png"
+            alt="Logo do Site"
+            className="logo logo-mobile"
+          />
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="ms-auto">
+            <Nav.Link href="#home">Jogos Recentes</Nav.Link>
+            <Nav.Link href="#link">Todos os Jogos</Nav.Link>
+            <Nav.Link href="#link">Contato</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }
 
