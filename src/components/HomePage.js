@@ -1,6 +1,5 @@
 // HomePage.js
 import React from 'react';
-import { Link } from 'react-router-dom'; // Importe o Link
 import MyCarousel from './MyCarousel';
 import ItemCard from './ItemCard';
 
@@ -60,7 +59,7 @@ const HomePage = () => {
       </div>
 
       <div id="jogos" className="row justify-content-center mt-4">
-        <Link to="/all-games" className="btn btn-primary" style={buttonStyle}>Mais jogos</Link> {/* Use Link em vez de button */}
+        <button className="btn btn-primary" style={buttonStyle}>Mais jogos</button>
       </div>
     </div>
   );
