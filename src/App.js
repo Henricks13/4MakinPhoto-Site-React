@@ -1,25 +1,37 @@
 // App.js
 import 'bootstrap/dist/css/bootstrap.min.css';
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import HomePage from './components/HomePage';
 import AllGamesPage from './components/AllGamesPage';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Importe BrowserRouter, Routes e Route
+import Spinner from './components/Spinner'; // Importe o componente Spinner
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 1000); // Simula um tempo de carregamento de 1 segundo
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div className="App">
-      <Router> {/* Use o BrowserRouter */}
+      <Router>
         <Header />
         <div className="content">
-          <Routes> {/* Use o componente Routes */}
-            <Route path="/" element={<HomePage />} /> {/* Use o componente Route como filho de Routes */}
-            <Route path="/all-games" element={<AllGamesPage />} /> {/* Use o componente Route como filho de Routes */}
-          </Routes>
+          {loading ? (
+            <Spinner />
+          ) : (
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/all-games" element={<AllGamesPage />} />
+            </Routes>
+          )}
         </div>
         <Footer />
-      </Router> {/* Feche o BrowserRouter */}
+      </Router>
     </div>
   );
 }
