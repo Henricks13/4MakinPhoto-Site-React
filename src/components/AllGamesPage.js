@@ -12,19 +12,17 @@ const AllGamesPage = () => {
   ];
 
   return (
-    <div>
-      <div className="container mt-5">
-        <div className="row justify-content-center">
-          {allGames.map((game, index) => (
-            <div key={index} className="col-md-3 col-6 mb-4">
-              <ItemCard
-                title={game.title}
-                imageSrc={game.imageSrc}
-                description={game.description}
-              />
-            </div>
-          ))}
-        </div>
+    <div className="container mt-5">
+      <div className="row justify-content-center">
+        {allGames.map((game, index) => (
+          <div key={index} className="col-lg-3 col-md-4 col-sm-6 col-12 mb-4"> {/* Define o layout responsivo usando classes do Bootstrap */}
+            <ItemCard
+              title={game.title}
+              imageSrc={game.imageSrc}
+              description={game.description}
+            />
+          </div>
+        ))}
       </div>
     </div>
   );
