@@ -3,54 +3,66 @@ import MyCarousel from './MyCarousel';
 import ItemCard from './ItemCard';
 
 const HomePage = () => {
+  const cardStyle = { borderColor: '#FF0000', color: '#FF0000' };
+  const buttonStyle = { backgroundColor: '#FF0000', borderColor: '#FF0000' };
+  const hoverStyle = { backgroundColor: '#FF0000', borderColor: '#FF0000' };
+
   return (
     <div>
       <MyCarousel />
 
-      {/* Nova seção com itens */}
       <div className="container mt-5">
-        {/* Movendo os itens para dentro de uma nova div */}
-        <div className="row">
-          <div className="row justify-content-center mb-4">
-            <div className="col-md-6 text-center">
-              <h2>Jogos Recentes</h2>
-            </div>
+        <div className="row justify-content-center">
+          <div className="col-12 text-center mb-4">
+            <h2>Jogos Recentes</h2>
           </div>
-          <div className="col-md-3 mb-4 col-12 text-center"> {/* Alterando para ocupar toda a largura e centralizar no celular */}
+          <div className="col-md-3 col-sm-6 mb-4">
             <ItemCard
               title="Flamengo x Santos"
               imageSrc="https://via.placeholder.com/200x200"
               description="Some quick example text to build on the card title and make up the bulk of the card's content."
+              buttonColor="#FF0000"
+              style={cardStyle}
+              buttonStyle={buttonStyle}
+              hoverStyle={hoverStyle}
             />
           </div>
-          <div className="col-md-3 mb-4 col-12 text-center"> {/* Alterando para ocupar toda a largura e centralizar no celular */}
+          <div className="col-md-3 col-sm-6 mb-4"> 
             <ItemCard
               title="Brasilia x Toque de Classe"
               imageSrc="https://via.placeholder.com/200x200"
               description="Some quick example text to build on the card title and make up the bulk of the card's content."
+              style={cardStyle}
+              buttonStyle={buttonStyle}
+              hoverStyle={hoverStyle}
             />
           </div>
-          <div className="col-md-3 mb-4 col-12 text-center"> {/* Alterando para ocupar toda a largura e centralizar no celular */}
+          <div className="col-md-3 col-sm-6 mb-4">
             <ItemCard
               title="Planalto x Santos"
               imageSrc="https://via.placeholder.com/200x200"
               description="Some quick example text to build on the card title and make up the bulk of the card's content."
+              style={cardStyle}
+              buttonStyle={buttonStyle}
+              hoverStyle={hoverStyle}
             />
           </div>
-          <div className="col-md-3 mb-4 col-12 text-center"> {/* Alterando para ocupar toda a largura e centralizar no celular */}
+          <div className="col-md-3 col-sm-6 mb-4">
             <ItemCard
               title="Flamengo x Fluminense"
               imageSrc="https://via.placeholder.com/200x200"
               description="Some quick example text to build on the card title and make up the bulk of the card's content."
+              style={cardStyle}
+              buttonStyle={buttonStyle}
+              hoverStyle={hoverStyle}
             />
           </div>
         </div>
-        
-        
       </div>
+
       <div className="row justify-content-center mt-4">
-          <button className="btn btn-primary">Mais jogos</button>
-        </div>
+        <button className="btn btn-primary" style={buttonStyle}>Mais jogos</button>
+      </div>
     </div>
   );
 }

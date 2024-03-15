@@ -1,8 +1,7 @@
-// ItemCard.js
-
 import React from 'react';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
+import './ItemCard.css'; // Importar o arquivo CSS para aplicar estilos
 
 const ItemCard = ({ title, imageSrc, description }) => {
   return (
@@ -11,7 +10,8 @@ const ItemCard = ({ title, imageSrc, description }) => {
         <Card.Img variant="top" src={imageSrc} />
         <Card.Body>
           <Card.Title>{title}</Card.Title>
-          <Button variant="primary">Ver fotos</Button>
+          {/* Adicionar a classe custom-button para aplicar os estilos de hover */}
+          <Button variant="primary" className="custom-button">Ver fotos</Button>
         </Card.Body>
       </Card>
     </div>

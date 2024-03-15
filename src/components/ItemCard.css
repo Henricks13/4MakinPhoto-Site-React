@@ -1,0 +1,16 @@
+/* ItemCard.css */
+
+/* Botão verde */
+.custom-button {
+    background-color: green;
+    border-color: green;
+    color: white;
+  }
+  
+  /* Hover verde claro */
+  .custom-button:hover {
+    background-color: rgb(54, 196, 54);
+    border-color: rgb(54, 196, 54);
+    color: white;
+  }
+  
