@@ -1,4 +1,6 @@
+// HomePage.js
 import React from 'react';
+import { Link } from 'react-router-dom'; // Importe o Link
 import MyCarousel from './MyCarousel';
 import ItemCard from './ItemCard';
 
@@ -22,12 +24,9 @@ const HomePage = () => {
               imageSrc="https://via.placeholder.com/200x200"
               description="Some quick example text to build on the card title and make up the bulk of the card's content."
               buttonColor="#FF0000"
-              style={cardStyle}
-              buttonStyle={buttonStyle}
-              hoverStyle={hoverStyle}
             />
           </div>
-          <div className="col-md-3 col-sm-6 mb-4"> 
+          <div className="col-md-3 col-sm-6 mb-4">
             <ItemCard
               title="Brasilia x Toque de Classe"
               imageSrc="https://via.placeholder.com/200x200"
@@ -60,8 +59,8 @@ const HomePage = () => {
         </div>
       </div>
 
-      <div className="row justify-content-center mt-4">
-        <button className="btn btn-primary" style={buttonStyle}>Mais jogos</button>
+      <div id="jogos" className="row justify-content-center mt-4">
+        <Link to="/all-games" className="btn btn-primary" style={buttonStyle}>Mais jogos</Link> {/* Use Link em vez de button */}
       </div>
     </div>
   );
