@@ -11,8 +11,7 @@ const ItemCard = ({ title, imageSrc, description }) => {
         <Card.Img variant="top" src={imageSrc} />
         <Card.Body>
           <Card.Title>{title}</Card.Title>
-          <Card.Text>{description}</Card.Text>
-          <Button variant="primary">Go somewhere</Button>
+          <Button variant="primary">Ver fotos</Button>
         </Card.Body>
       </Card>
     </div>

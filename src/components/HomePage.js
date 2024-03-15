@@ -18,28 +18,28 @@ const HomePage = () => {
           </div>
           <div className="col-md-3 mb-4 col-12 text-center"> {/* Alterando para ocupar toda a largura e centralizar no celular */}
             <ItemCard
-              title="Item 1"
+              title="Flamengo x Santos"
               imageSrc="https://via.placeholder.com/200x200"
               description="Some quick example text to build on the card title and make up the bulk of the card's content."
             />
           </div>
           <div className="col-md-3 mb-4 col-12 text-center"> {/* Alterando para ocupar toda a largura e centralizar no celular */}
             <ItemCard
-              title="Item 2"
+              title="Brasilia x Toque de Classe"
               imageSrc="https://via.placeholder.com/200x200"
               description="Some quick example text to build on the card title and make up the bulk of the card's content."
             />
           </div>
           <div className="col-md-3 mb-4 col-12 text-center"> {/* Alterando para ocupar toda a largura e centralizar no celular */}
             <ItemCard
-              title="Item 3"
+              title="Planalto x Santos"
               imageSrc="https://via.placeholder.com/200x200"
               description="Some quick example text to build on the card title and make up the bulk of the card's content."
             />
           </div>
           <div className="col-md-3 mb-4 col-12 text-center"> {/* Alterando para ocupar toda a largura e centralizar no celular */}
             <ItemCard
-              title="Item 4"
+              title="Flamengo x Fluminense"
               imageSrc="https://via.placeholder.com/200x200"
               description="Some quick example text to build on the card title and make up the bulk of the card's content."
             />
