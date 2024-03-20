@@ -6,6 +6,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import HomePage from './components/HomePage';
 import AllGamesPage from './components/AllGamesPage';
+import ContactPage from './components/ContactPage'; // Importe a página de contato
 import Spinner from './components/Spinner';
 
 function App() {
@@ -15,9 +16,6 @@ function App() {
     const handleLoad = () => {
       setLoading(false);
     };
-
-    //teste
-    
 
     // Quando o conteúdo da página terminar de carregar, pare de exibir o spinner
     window.addEventListener('load', handleLoad);
@@ -36,6 +34,7 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/all-games" element={<AllGamesPage />} />
+            <Route path="/contact" element={<ContactPage />} /> {/* Adicione a rota para a página de contato */}
           </Routes>
         </div>
         <Footer />

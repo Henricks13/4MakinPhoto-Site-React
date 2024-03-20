@@ -27,7 +27,7 @@ function Header() {
           <Nav className="ms-auto">
             <Nav.Link as={Link} to="/">Jogos Recentes</Nav.Link>
             <Nav.Link as={Link} to="/all-games">Todos os Jogos</Nav.Link>
-            <Nav.Link href="#link">Contato</Nav.Link>
+            <Nav.Link as={Link} to="/contact">Contato</Nav.Link>
             <Nav.Link as={Link} to="/admin-login">Administrador</Nav.Link>
           </Nav>
         </Navbar.Collapse>
