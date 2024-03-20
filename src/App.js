@@ -16,6 +16,9 @@ function App() {
       setLoading(false);
     };
 
+    //teste
+    
+
     // Quando o conteúdo da página terminar de carregar, pare de exibir o spinner
     window.addEventListener('load', handleLoad);
 
