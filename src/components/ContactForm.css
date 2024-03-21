@@ -6,56 +6,58 @@
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 50px;
-  }
-  
-  .contact-info ul {
+    width: calc(100% - 20px); /* Ajusta a largura do container */
+    margin-left: auto; /* Centraliza o container na tela */
+    margin-right: auto; /* Centraliza o container na tela */
+}
+
+.contact-info ul {
     list-style: none;
     padding: 0;
-  }
-  
-  .contact-info li {
+}
+
+.contact-info li {
     margin-bottom: 10px;
     display: flex;
     align-items: center;
-  }
-  
-  .contact-info li svg {
+}
+
+.contact-info li svg {
     margin-right: 10px;
-  }
-  
-  .contact-info li a {
+}
+
+.contact-info li a {
     color: #333;
     text-decoration: none;
-  }
-  
-  .contact-info li a:hover {
+}
+
+.contact-info li a:hover {
     text-decoration: underline;
-  }
-  
-  .form-label {
+}
+
+.form-label {
     font-weight: bold;
-  }
-  
-  .form-control {
+}
+
+.form-control {
     font-size: 16px;
-  }
-  
-  textarea.form-control {
+}
+
+textarea.form-control {
     min-height: 120px;
-  }
-  
-  .btn-primary {
+}
+
+.btn-primary {
     font-weight: bold;
-  }
-  
-  /* Novas classes para ajustar o layout do formulário */
-  .contact-form-row {
+}
+
+/* Novas classes para ajustar o layout do formulário */
+.contact-form-row {
     margin-left: 0;
     margin-right: 0;
-  }
-  
-  .contact-form-col {
+}
+
+.contact-form-col {
     padding-left: 0;
     padding-right: 0;
-  }
-  
+}
