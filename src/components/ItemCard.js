@@ -1,6 +1,7 @@
+// ItemCard.js
 import React from 'react';
 import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
+import { Link } from 'react-router-dom'; // Importe o componente Link
 import './ItemCard.css'; // Importar o arquivo CSS para aplicar estilos
 
 const ItemCard = ({ title, imageSrc, description }) => {
@@ -10,8 +11,7 @@ const ItemCard = ({ title, imageSrc, description }) => {
         <Card.Img variant="top" src={imageSrc} />
         <Card.Body>
           <Card.Title>{title}</Card.Title>
-          {/* Adicionar a classe custom-button para aplicar os estilos de hover */}
-          <Button variant="primary" className="custom-button">Ver fotos</Button>
+          <Link to="/game-photos" className="btn btn-primary custom-button">Ver fotos</Link>
         </Card.Body>
       </Card>
     </div>

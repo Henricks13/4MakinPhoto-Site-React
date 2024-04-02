@@ -1,13 +1,14 @@
 // App.js
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Troque de 'Switch' para 'Routes'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import HomePage from './components/HomePage';
 import AllGamesPage from './components/AllGamesPage';
-import ContactPage from './components/ContactPage'; // Importe a página de contato
-import AdminLoginPage from './components/AdminLoginPage'; // Importe a página de login do administrador
+import ContactPage from './components/ContactPage';
+import AdminLoginPage from './components/AdminLoginPage';
+import GenericPhotosPage from './components/GenericPhotosPage'; // Importe a página genérica de fotos do jogo
 import Spinner from './components/Spinner';
 
 function App() {
@@ -35,6 +36,8 @@ function App() {
             <Route path="/all-games" element={<AllGamesPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/admin-login" element={<AdminLoginPage />} />
+            <Route path="/game-photos" element={<GenericPhotosPage />} />
+            
           </Routes>
         </div>
         <Footer />

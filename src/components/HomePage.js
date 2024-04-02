@@ -6,8 +6,6 @@ import { Link } from 'react-router-dom'; // Importe o componente Link
 
 const HomePage = () => {
   const cardStyle = { borderColor: '#FF0000', color: '#FF0000' };
-  const buttonStyle = { backgroundColor: '#FF0000', borderColor: '#FF0000' };
-  const hoverStyle = { backgroundColor: '#FF0000', borderColor: '#FF0000' };
 
   return (
     <div>
@@ -23,38 +21,36 @@ const HomePage = () => {
               title="Flamengo x Santos"
               imageSrc="https://via.placeholder.com/200x200"
               description="Some quick example text to build on the card title and make up the bulk of the card's content."
-              buttonColor="#FF0000"
-            />
+            >
+              <Link to="/game-photos" className="btn btn-primary">Ver Fotos</Link>
+            </ItemCard>
           </div>
           <div className="col-md-3 col-sm-6 mb-4">
             <ItemCard
               title="Brasilia x Toque de Classe"
               imageSrc="https://via.placeholder.com/200x200"
               description="Some quick example text to build on the card title and make up the bulk of the card's content."
-              style={cardStyle}
-              buttonStyle={buttonStyle}
-              hoverStyle={hoverStyle}
-            />
+            >
+              <Link to="/game-photos" className="btn btn-primary">Ver Fotos</Link>
+            </ItemCard>
           </div>
           <div className="col-md-3 col-sm-6 mb-4">
             <ItemCard
               title="Planalto x Santos"
               imageSrc="https://via.placeholder.com/200x200"
               description="Some quick example text to build on the card title and make up the bulk of the card's content."
-              style={cardStyle}
-              buttonStyle={buttonStyle}
-              hoverStyle={hoverStyle}
-            />
+            >
+              <Link to="/game-photos" className="btn btn-primary">Ver Fotos</Link>
+            </ItemCard>
           </div>
           <div className="col-md-3 col-sm-6 mb-4">
             <ItemCard
               title="Flamengo x Fluminense"
               imageSrc="https://via.placeholder.com/200x200"
               description="Some quick example text to build on the card title and make up the bulk of the card's content."
-              style={cardStyle}
-              buttonStyle={buttonStyle}
-              hoverStyle={hoverStyle}
-            />
+            >
+              <Link to="/game-photos" className="btn btn-primary">Ver Fotos</Link>
+            </ItemCard>
           </div>
         </div>
       </div>
