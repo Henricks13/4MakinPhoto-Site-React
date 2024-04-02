@@ -1,16 +1,19 @@
 /* ItemCard.css */
 
-/* Botão verde */
+/* Estilos para os botões */
 .custom-button {
-    background-color: green;
-    border-color: green;
-    color: white;
-  }
-  
-  /* Hover verde claro */
-  .custom-button:hover {
-    background-color: rgb(54, 196, 54);
-    border-color: rgb(54, 196, 54);
-    color: white;
-  }
-  
+  background-color: green;
+  border-color: green;
+  color: white;
+  width: 100%; /* Define a largura como 100% */
+  display: block; /* Transforma os botões em elementos de bloco */
+  margin: 0 auto; /* Centraliza os botões horizontalmente */
+  text-align: center; /* Centraliza o texto dentro dos botões */
+}
+
+/* Estilos para o hover dos botões */
+.custom-button:hover {
+  background-color: rgb(54, 196, 54);
+  border-color: rgb(54, 196, 54);
+  color: white;
+}

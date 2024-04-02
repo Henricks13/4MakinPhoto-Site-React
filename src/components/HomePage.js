@@ -2,6 +2,7 @@
 import React from 'react';
 import MyCarousel from './MyCarousel';
 import ItemCard from './ItemCard';
+import { Link } from 'react-router-dom'; // Importe o componente Link
 
 const HomePage = () => {
   const cardStyle = { borderColor: '#FF0000', color: '#FF0000' };
@@ -59,7 +60,9 @@ const HomePage = () => {
       </div>
 
       <div id="jogos" className="row justify-content-center mt-4">
-        <button className="btn btn-primary" style={buttonStyle}>Mais jogos</button>
+        <Link to="/all-games" className="col-md-12 col-12 d-block text-decoration-none text-white py-3 bg-danger text-center">
+          Mais jogos
+        </Link>
       </div>
     </div>
   );
